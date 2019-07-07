@@ -40,7 +40,7 @@ html, body {
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #7f0000; /* Red */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -48,6 +48,14 @@ html, body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
+
+
+}
+.button:hover {
+  background-color: #b71c1c; /* Green */
+  color: white;
+
 }
 
 /* Container for flexboxes */
@@ -61,8 +69,13 @@ html, body {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+
+  overflow: hidden;
+
   padding: 10px;
   background-color: #819ca9;
+    font-size: 16px;
+
 
 }
 .column:hover{
@@ -79,11 +92,17 @@ html, body {
   bottom:0px;
   width: 100%;
   color: white;
+  cursor:pointer;
+
 }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-size: 16px;
 
-
-
-
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
