@@ -1,4 +1,4 @@
-navnArray = []
+navnArray = [];
 
 $("#myBtn").on("click", myFunction());
 
