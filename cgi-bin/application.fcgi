@@ -1,4 +1,4 @@
-#!/home/shomec/a/alexajar/.local/share/virtualenvs/DjangoTull-h1BolAEy/bin/python
+#!/home/shomec/a/alexajar/.local/share/virtualenvs/mysite-s8UUghzl/bin/python
 
 import os
 import sys
@@ -6,7 +6,7 @@ import traceback
 
 home = '/home/shomec/a/alexajar'
 try:
-    os.environ['VIRTUAL_ENV'] = os.path.join(home, '.lcal/share/virtualenvs/DjangoTull-h1BolAEy/bin/')
+    os.environ['VIRTUAL_ENV'] = os.path.join(home, '.local/share/virtualenvs/mysite-s8UUghzl/bin')
     os.environ['PATH'] = os.environ['VIRTUAL_ENV'] + ':' + os.environ['PATH']
 
     project = os.path.join(home, 'mysite')
