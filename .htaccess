@@ -1,3 +1,1 @@
-<IfModule mod_fastcgi.c>
-  AddHandler fastcgi-script .fcgi
-</IfModule>
+AddHandler fastcgi-script .fcgi
