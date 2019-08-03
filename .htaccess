@@ -1,4 +1,4 @@
-<If 1 == 1>
+<If "1==1">
     AddHandler cgi-script .fcgi
     RewriteEngine on
     RewriteBase /
