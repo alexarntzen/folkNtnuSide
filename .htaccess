@@ -1,4 +1,4 @@
-AddHandler fcgid-script .fcgi
+AddHandler cgi-script .fcgi
 RewriteEngine on
 RewriteBase /
 # The following two lines are for FastCGI:
