@@ -1,9 +1,8 @@
-
-<IfModule mod_fastcgi.c>
+<If 1 == 1>
     AddHandler cgi-script .fcgi
     RewriteEngine on
     RewriteBase /
     # The following two lines are for FastCGI:
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ cgi-bin/application.fcgi/$1 [QSA,L]
-</IfModule>
+</If>
