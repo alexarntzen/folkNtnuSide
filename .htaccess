@@ -1,1 +1,2 @@
-AddHandler fastcgi-script .fcgi
+AddHandler cgi-script .fcgi
+RewriteEngine on
