@@ -1,4 +1,4 @@
-<IfModule mod_fcgid.c>
+<IfModule mod_wsgi.c>
   RewriteEngine on
   RewriteRule ^(.*)$ https://www.nrk.no/ [QSA,L]
 </IfModule>
