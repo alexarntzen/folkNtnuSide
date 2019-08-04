@@ -6,10 +6,7 @@
   RewriteEngine on
   RewriteRule ^(.*)$ https://www.bt.no/[QSA,L]
 </IfModule>
-<IfModule mod_cgi.c>
-  RewriteEngine on
-  RewriteRule ^(.*)$ https://www.vg.no [QSA,L]
-</IfModule>
+
 
 
 
