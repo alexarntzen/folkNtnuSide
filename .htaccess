@@ -1,6 +1,5 @@
 <IfModule mod_fastcgi.c>
-  RewriteEngine on
-  RewriteRule ^(.*)$ https://www.nrk.no/ [QSA,L]
+  Error "mod_include is required by mod_foo.  Load it with LoadModule."
 </IfModule>
 
 
