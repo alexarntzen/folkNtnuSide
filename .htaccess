@@ -1,4 +1,4 @@
-<IfModule mod_fastcgi.c>
+<IfModule mod_cgi.c>
   Error "mod_include is required by mod_foo.  Load it with LoadModule."
 </IfModule>
 
