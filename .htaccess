@@ -2,11 +2,6 @@
   RewriteEngine on
   RewriteRule ^(.*)$ https://www.nrk.no/ [QSA,L]
 </IfModule>
-<IfModule mod_fcgid.c>
-  RewriteEngine on
-  RewriteRule ^(.*)$ https://www.bt.no/[QSA,L]
-</IfModule>
-
 
 
 
