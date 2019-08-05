@@ -1,7 +1,4 @@
-<IfModule mod_wsgi.c>
-  RewriteEngine on
-  RewriteRule ^(.*)$ https://www.nrk.no/ [QSA,L]
-</IfModule>
-
-
-
+AddHandler cgi-script .cgi
+RewriteEngine on
+RewriteRule ^cgi-bin/ - [L]
+RewriteRule ^django/(.*)$ /cgi-bin/django.cgi/$1 [QSA,L]
