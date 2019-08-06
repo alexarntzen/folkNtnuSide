@@ -1,4 +1,4 @@
 RewriteEngine on
 # The following two lines are for FastCGI:
 RewriteRule ^cgi-bin/ - [L]
-RewriteRule ^(.*)$ cgi-bin/django.cgi/$1 [QSA,L]
+RewriteRule ^(.*)$ cgi-bin/test.cgi/$1 [QSA,L]
