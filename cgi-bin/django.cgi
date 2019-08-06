@@ -28,9 +28,16 @@ http://docs.python.org/lib/module-compileall.html
 
 """
 
-import os, sys 
-# insert a sys.path.append("whatever") in here if django is not
-# on your sys.path.
+import os, sys
+
+home = '/home/shomec/a/alexajar'
+os.environ['VIRTUAL_ENV'] = os.path.join(home, '.local/share/virtualenvs/mysite-s8UUghzl/bin')
+os.environ['PATH'] = os.environ['VIRTUAL_ENV'] + ':' + os.environ['PATH']
+
+project = os.path.join(home, 'mysite')
+# Add a custom Python path.
+sys.path.insert(0, project)
+
 import django.core.handlers.wsgi
 
 def run_with_cgi(application):
