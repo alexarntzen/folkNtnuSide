@@ -25,6 +25,7 @@
 
 }
 
+
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
@@ -119,7 +120,9 @@ body{
 }
 
 
-
+.inherit{
+    font: inherit;
+}
 
 /* Style the footer */
 .footer {
