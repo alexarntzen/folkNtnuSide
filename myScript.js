@@ -1,23 +1,24 @@
-import {MDCRipple} from '@material/ripple';
+let navnArray = [];
 
-const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
-const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
-  return new MDCRipple(el);
-});
-
-
-$("#myBtn").on("click", myFunction());
-
-function myFunction()
-{
-    var navn = $("#namePrint").value;
-    navnArray.push(navn);
-    $("#namePrint").innerText = "Navnet ditt er" + navn;
+function myFunction() {
+    var text = $("#nameInput").val();
+    navnArray.push(text);
+    $("#kolonnetext2").text( "Hei " + text + "!");
     var i;
+    var moretext = "";
     for (i = 0; i < navnArray.length; i++) {
-        $("#kolonne2").innerHTML += navnArray[i] + "<br>";
+        moretext += "Hei " +  navnArray[i] + "<br>";
     }
+    $("#kolonnetext3").html(moretext);
 
 }
 
+$(document).ready(function(){
 
+
+    $("#myBtn").click(myFunction);
+
+
+  // jQuery methods go here...
+
+});
