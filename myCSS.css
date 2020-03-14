@@ -7,11 +7,12 @@
     --primary: #212121;
     --primary-light: #484848;
     --primary-dark: #000000;
-    --secondary: #bf360c;
-    --secondary-light: #f9683a;
-    --secondary-dark: #870000;
+    --secondary: #827717;
+    --secondary-light: #b4a647;
+    --secondary-dark: #524c00;
     --background: #ffffff;
     --background-light: #ffffff;
+
 
     --primary-text: white;
     --primary-light-text: white;
@@ -124,6 +125,9 @@ body{
     font: inherit;
 }
 
+.bold{
+    font-weight: bold;
+}
 /* Style the footer */
 .footer {
     background-color: var(--primary-light);
