@@ -7,9 +7,9 @@
     --primary: #212121;
     --primary-light: #484848;
     --primary-dark: #000000;
-    --secondary: #827717;
-    --secondary-light: #b4a647;
-    --secondary-dark: #524c00;
+    --secondary: #004d40;
+    --secondary-light: #39796b;
+    --secondary-dark: #00251a;
     --background: #ffffff;
     --background-light: #ffffff;
 
@@ -18,7 +18,7 @@
     --primary-light-text: white;
     --primary-dark-text: white;
     --secondary-text: white;
-    --secondary-light-text: black;
+    --secondary-light-text: white;
     --secondary-dark-text: white;
     --background-text: black;
     --background-light-text: black;
@@ -40,7 +40,6 @@ body{
 
 /* Style the top navigation bar */
 .topnav {
-    overflow: hidden;
     background-color: var(--primary-dark);
 }
 
@@ -114,10 +113,10 @@ body{
 }
 
 .column a{
-    color: var(--secondary);
+    color: var(--primary);
 }
 .column a:hover{
-    color: var(--secondary-light);
+    color: var(--primary-light);
 }
 
 
@@ -130,12 +129,12 @@ body{
 }
 /* Style the footer */
 .footer {
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
     padding: 10px;
     text-align: center;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
-    color: var(--primary-light-text);
+    color: var(--primary-dark-text);
     cursor: pointer;
 }
 
