@@ -88,8 +88,7 @@ body{
 .row {
     display: -webkit-flex;
     display: flex;
-    border-top: 1px solid var(--secondary-dark);
-    border-bottom: 1px solid var(--secondary-dark);
+
 
 }
 
@@ -104,6 +103,8 @@ body{
     background-color: var(--background);
     color: var(--background-text);
     font-size: 16px;
+    border-left: 1px solid var(--secondary);
+    border-right: 1px solid var(--secondary);
 }
 
 .column.hover-over:hover {
@@ -113,15 +114,16 @@ body{
 }
 
 .column a{
-    color: var(--primary);
+    color: var(--secondary);
 }
 .column a:hover{
-    color: var(--primary-light);
+    color: var(--secondary-light);
 }
 
 
 .inherit{
     font: inherit;
+    text-decoration: none;
 }
 
 .bold{
