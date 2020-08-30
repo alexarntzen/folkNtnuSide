@@ -7,7 +7,7 @@ document.querySelector(".button").addEventListener("click", () => {
     document.querySelector("#kolonnetext3").innerHTML = "";
     let i;
     for (i = 0; i < navnArray.length; i++) {
-        let  text = document.createTextNode("Hei " +  navnArray[i]);
+        var  text = document.createTextNode("Hei " +  navnArray[i] + "!");
         let br = document.createElement("br");
         document.querySelector("#kolonnetext3").appendChild(text);
         document.querySelector("#kolonnetext3").appendChild(br);
