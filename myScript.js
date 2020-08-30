@@ -1,24 +1,17 @@
 let navnArray = [];
 
-function myFunction() {
-    var text = $("#nameInput").val();
-    navnArray.push(text);
-    $("#kolonnetext2").text( "Hei " + text + "!");
-    var i;
-    var moretext = "";
+document.querySelector(".button").addEventListener("click", () => {
+    let name =document.querySelector("#nameInput").value;
+    navnArray.push(name);
+    document.querySelector("#kolonnetext2").textContent =  "Hei " + text + "!";
+    document.querySelector("#kolonnetext3").innerHTML = "";
+    let i;
     for (i = 0; i < navnArray.length; i++) {
-        moretext += "Hei " +  navnArray[i] + "<br>";
+        let  text = document.createTextNode("Hei " +  navnArray[i]);
+        let br = document.createElement("br");
+        document.querySelector("#kolonnetext3").appendChild(text);
+        document.querySelector("#kolonnetext3").appendChild(br);
     }
-    $("#kolonnetext3").html(moretext);
-
-}
-
-$(document).ready(function(){
-
-
-    $("#myBtn").click(myFunction);
-
-
-  // jQuery methods go here...
-
 });
+
+
